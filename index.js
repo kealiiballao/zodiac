@@ -20,10 +20,11 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   res.end("My Zodiac Sign is " + myZodiacSign1);
   res.end("My Daughter's Zodiac Sign is " + myZodiacSign2);
-    
+
 });
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
   console.log('My Zodiac Sign is ' + myZodiacSign1 + 'and daugther is ' + myZodiacSign2)
 });
+//Original adds 1 more zodiacSign() lookup date.
